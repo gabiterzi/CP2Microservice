@@ -1,3 +1,4 @@
+import { Item } from './../../../../node_modules/json-server/lib/service.d';
 import { Component } from '@angular/core';
 import { ClienteService } from '../../services/cliente.service';
 import { Cliente } from '../../interfaces/Cliente';
@@ -47,7 +48,7 @@ export class ClienteComponent {
   }
 
   listar():void{
-      this.clientes = this.clienteService.listar();
+      this.clienteService.listar().subscribe((listClient) => (this.clientes = listClient));
   }
 
   remover(id:string):void{
