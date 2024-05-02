@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { ClienteComponent } from './components/cliente/cliente.component';
 import { TarefasComponent } from "./components/tarefas/tarefas.component";
 import { NavbarComponent } from './navbar/navbar.component';
+import { PokemonListComponent } from './components/pokemon-list/pokemon-list.component';
 
 @Component({
     selector: 'app-root',

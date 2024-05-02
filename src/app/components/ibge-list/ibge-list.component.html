@@ -1,0 +1,16 @@
+<table class="table table-info table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Sigla</th>
+      <th>Nome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let estado of estados">
+      <td>{{ estado.id }}</td>
+      <td>{{ estado.sigla }}</td>
+      <td>{{ estado.nome }}</td>
+    </tr>
+  </tbody>
+</table>

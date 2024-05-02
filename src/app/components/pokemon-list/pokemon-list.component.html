@@ -1,0 +1,12 @@
+<table class="table table-danger table-striped">
+        <thead>
+          <tr>  
+            <th scope="col">Lista dos Pokemons</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let pokemon of pokemons">
+                <td>{{ pokemon.name }}</td>
+            </tr>
+        </tbody>
+    </table>

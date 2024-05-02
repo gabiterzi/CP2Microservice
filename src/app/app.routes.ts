@@ -3,6 +3,8 @@ import { HomeComponent } from './home/home.component';
 import { RotaComponent } from './components/rota/rota.component';
 import { ClientDetailComponent } from './components/client-detail/client-detail.component';
 import { ClienteComponent } from './components/cliente/cliente.component';
+import { PokemonListComponent } from './components/pokemon-list/pokemon-list.component';
+import { IbgeListComponent } from './components/ibge-list/ibge-list.component';
 
 export const routes: Routes = [
   // se a path for vazia ele vai pra home
@@ -11,6 +13,8 @@ export const routes: Routes = [
   { path: 'nova-rota', component: RotaComponent},
   { path: 'cliente/:id', component: ClientDetailComponent},
   { path: 'cliente', component: ClienteComponent},
+  { path: 'pokemon', component: PokemonListComponent},
+  { path: 'estados', component: IbgeListComponent},
   // o ** significa que qualquer outra coisa além de vazio e nova-rota irá para esse
   // Esse tem sempre que estar por último
   { path: '**', component: HomeComponent}
