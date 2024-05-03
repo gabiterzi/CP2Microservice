@@ -18,3 +18,12 @@ input{
   border-radius: 15px;
 }
 
+.navbar-custom{
+    background-color: rgb(232, 168, 189);
+    color: pink;
+}
+
+body{
+  margin: 30px;
+}
+

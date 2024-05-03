@@ -42,7 +42,8 @@ export class ClienteComponent {
           id : this.generateRandomString(6)
         }
         this.clientForm.reset()
-        this.clienteService.adicionar(clientNovo)
+        this.clientes.push(clientNovo)
+        this.clienteService.adicionar(clientNovo).subscribe()
         alert('Cadastrado com sucesso!')
      }
   }
@@ -52,7 +53,8 @@ export class ClienteComponent {
   }
 
   remover(id:string):void{
-    this.clienteService.remover(id);
+    this.clientes = this.clientes.filter((c)=> c.id !== id)
+    this.clienteService.remover(id).subscribe();
     alert('Removido com sucesso')
   }
 

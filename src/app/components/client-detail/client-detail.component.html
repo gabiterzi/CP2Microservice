@@ -1,3 +1,10 @@
-<p>client-detail works!</p>
+<form [formGroup]="clientForm" (ngSubmit)="update()">
+  <input type="hidden" formControlName="id/" />
+  <p>Nome: <input type="text" formControlName="nome" /></p>
+  <p>Telefone: <input type="text" formControlName="telefone" /></p>
+  <button class="button-edit" type="submit">Enviar</button>
+</form>
 
-<p>Id enviado: {{id}}</p>
+<a href="cliente" class="btn btn-edit">Voltar</a>
+
+<p>Id enviado: {{ id }}</p>

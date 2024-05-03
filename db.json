@@ -1,15 +1,14 @@
 {
-  "clientes" : [
+  "clientes": [
     {
-      "id" : "abc123456",
-      "nome" : "Gabi Terzi",
-      "telefone" : "11111"
+      "nome": "Gabi Terzi",
+      "telefone": "44444444",
+      "id": "abc123456"
     },
     {
-      "id" : "def789012",
-      "nome" : "Gui Terzi",
-      "telefone" : "11111"
+      "id": "def789012",
+      "nome": "Gui Terzi",
+      "telefone": "11111"
     }
-
   ]
 }

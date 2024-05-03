@@ -1,0 +1,18 @@
+form, ul, h2 {
+    margin: 30px;
+}
+
+.client-line{
+    margin-bottom: 10px;
+}
+
+.button-edit{
+  size: 50px;
+  border-radius: 15px;
+  background-color: rgb(255, 205, 226);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    margin-left: 8px;
+}

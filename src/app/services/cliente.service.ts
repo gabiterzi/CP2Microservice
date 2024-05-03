@@ -20,16 +20,34 @@ export class ClienteService {
     // return this.clientes;
   }
 
-  remover(id:string){
-    const cliente = this.clientes.find(c => c.id == id);
+  getById(id:string) : Observable<Cliente>
+  {
+    return this.http.get(`${this.clientesUrl}/${id}`) as Observable<Cliente>
+  }
 
-    if(cliente){
-       const index = this.clientes.indexOf(cliente);
-       this.clientes.splice(index,1);
+  remover(id:string){
+    // const cliente = this.clientes.find(c => c.id == id);
+
+    // if(cliente){
+    //    const index = this.clientes.indexOf(cliente);
+    //    this.clientes.splice(index,1);
+    // }
+    return this.http.delete(`${this.clientesUrl}/${id}`)
+  }
+
+  httpHeader = {
+      headers:{
+        "Content-Type": "application/json"
+      }
     }
+
+  atualizar(cliente: Cliente){
+    return this.http.put(`${this.clientesUrl}/${cliente.id}`, cliente, this.httpHeader)
   }
 
   adicionar(cliente:Cliente){
-    this.clientes.push(cliente);
+
+    return this.http.post(this.clientesUrl, cliente, this.httpHeader)
+    // this.clientes.push(cliente);
   }
 }
