@@ -1,0 +1,38 @@
+<form [formGroup]="fornecedorForm" (ngSubmit)="inserir()" class="container">
+  <h1>Fornecedores</h1>
+  <p>Nome: <input type="text" formControlName="nome" /></p>
+  <p>Edereço: <input type="text" formControlName="endereco" /></p>
+  <p>Telefone: <input type="text" formControlName="telefone" /></p>
+  <button type="submit" class="btn-edit">Enviar</button>
+</form>
+
+<h2 class="container">Lista de Fornecedores</h2>
+
+<table class="table table-danger table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Endereço</th>
+      <th scope="col">Telefone</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of fornecedor">
+      <td>{{ item.id }}</td>
+      <td>{{ item.nome }}</td>
+      <td>{{ item.endereco }}</td>
+      <td>{{ item.telefone }}</td>
+      <td><input
+      class="btn btn-edit"
+      type="button"
+      value="remover"
+      (click)="remover(item.id)"
+    /></td>
+      <td>
+  <a type="button" class="btn" href="fornecedor/{{ item.id }}">Editar</a></td>
+    </tr>
+  </tbody>
+</table>

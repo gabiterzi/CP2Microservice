@@ -1,0 +1,25 @@
+<div class="container-fluid p-5">
+    <h1>Editar o fornecedor</h1>
+    <form [formGroup]="fornecedorForm" (ngSubmit)="update()" class="row g-3">
+    <input type="hidden" formControlName="id"/>
+    <div class="col-auto">
+        <p>Nome
+            <input type="text" class="form-control" id="inputPassword2" placeholder="Nome" formControlName="nome">
+        </p>
+    </div>
+    <div class="col-auto">
+        <p>Telefone
+            <input type="text" class="form-control" id="inputPassword2" placeholder="Telefone" formControlName="telefone">
+        </p>
+    </div>
+    <div class="col-auto">
+        <p>Endereço
+            <input type="text" class="form-control" id="inputPassword2" placeholder="Endereço" formControlName="endereco">
+        </p>
+    </div>
+    <div class="">
+      <button type="submit" class="btn btn-success">Atualizar</button>
+      <a type="button" class="btn" href="fornecedores">Voltar</a>
+    </div>
+  </form>
+</div>

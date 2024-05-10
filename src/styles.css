@@ -23,7 +23,11 @@ input{
     color: pink;
 }
 
-body{
-  margin: 30px;
+.btn-edit{
+  border-radius: 20px;
+  width: 100px;
 }
+
+
+
 

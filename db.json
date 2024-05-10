@@ -10,5 +10,19 @@
       "nome": "Gui Terzi",
       "telefone": "11111"
     }
+  ],
+  "fornecedores": [
+    {
+      "nome": "Gabriel Mota",
+      "telefone": "44444444",
+      "endereco": "aaaaaaaaaaa",
+      "id": "000000001"
+    },
+    {
+      "nome": "b",
+      "telefone": "b",
+      "endereco": "b",
+      "id": "UkLmfW"
+    }
   ]
 }
